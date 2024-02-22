@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
-    <header><h2>A Detailed Form</h2></header>
-    <form action="submit.php"></form>
-    First name:
-<input type=“text” name=“firstname”/>
-<br/>
-    Last name:
-<input type=“text” name=“lastname”/>
-<br/>
-<p>
-Gender:<br/>
-<input type="radio" name="gender" value="male" checked> Male<br>
-<input type="radio" name="gender" value="female"> Female<br>
-<input type="radio" name="gender" value="other"> Other<br>
-</p>
+    <h2><u>A Detailed Form</u></h2>
+    <form action="submit.php">
+        <br>
 
-<p>
-Hobbies:<br/>
-<input type="checkbox" name="hobbies1" value="Reading">Reading
-<br>
-<input type="checkbox" name="hobbies2" value="Travelling">Travelling
-<br>
-<input type="checkbox" name="hobbies2" value="Dancing">Dancing
-<br>
-<input type="checkbox" name="hobbies2" value="Exploring New Things">Exploring New Things
-<br>
-<input type="checkbox" name="hobbies2" value="Singing">Singing
-<br>
-</p>
+        First name:
+        <input type=“text” name=“firstname” />
+        <br />
+        Last name:
+        <input type=“text” name=“lastname” />
+        <br />
 
-<input type="submit">
+        <br>
+        <h5>DOB(mm/dd/yyyy):<input type="date" /></h5>
+
+
+        <h5>Gender:</h5>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        <br>
+
+
+        <h5>Hobbies:</h5>
+        <input type="checkbox" name="hobbies1" value="Reading">Reading
+        <br>
+        <input type="checkbox" name="hobbies2" value="Travelling">Travelling
+        <br>
+        <input type="checkbox" name="hobbies2" value="Dancing">Dancing
+        <br>
+        <input type="checkbox" name="hobbies2" value="Exploring New Things">Exploring New Things
+        <br>
+        <input type="checkbox" name="hobbies2" value="Singing">Singing
+        <br>
+        <div>
+            <h3>Select your semester</h3>
+            <select>
+                <option value="Semester" required>First Semester</option>
+                <option value="Semester" required>Second Semester</option>
+                <option value="Semester" Selected>Third Semester</option>
+                <option value="Semester" required>Fourth Semester</option>
+                <option value="Semester" required>Fifth Semester</option>
+                <option value="Semester" required>Sixth Semester</option>
+                <option value="Semester" required>Seventh Semester</option>
+                <option value="Semester" required>Eight Semester</option>
+
+            </select>
+        </div>
+        <br>
+        <input type="submit">
+
+    </form>
 </body>
+
 </html>
